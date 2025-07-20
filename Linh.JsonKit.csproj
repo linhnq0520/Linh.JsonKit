@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile> 
+
+    <PackageId>Linh.JsonKit</PackageId>
+    <Version>2.0.0</Version>
+    <Authors>Linh Nguyen</Authors>
+    <Company>Linh Dev</Company>
+    <Copyright>Copyright © $([System.DateTime]::Now.Year) Linh Nguyen</Copyright>
+
+    <Description>
+      A powerful, flexible, and high-performance .NET toolkit for working with JSON.
+      Provides intelligent serialization/deserialization (JConvert) and efficient JSON path querying (JPath).
+    </Description>
+    <PackageTags>json;converter;jconvert;jpath;path;serialization;deserialization;system.text.json;newtonsoft</PackageTags>
+    
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/linhnq0520/Linh.JsonKit</PackageProjectUrl> 
+    <RepositoryUrl>https://github.com/linhnq0520/Linh.JsonKit.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SpanJson" Version="4.2.1" />
+  </ItemGroup>
+
+</Project>
